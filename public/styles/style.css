@@ -1,0 +1,327 @@
+header.masthead{
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    text-align: center;
+    color: #FAF1E4;
+    background-image: url(../images/carretera.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+}
+
+
+.subject{
+    /* text-body-emphasis */
+    font-family: 'Noto Serif JP', serif;
+    font-size: 25px;
+    color: #FAF1E4;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.fecha{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.bottomline{
+    color: #FAF1E4;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.letrachica{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.greeting{
+    color: black;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 18px;
+    padding: 2rem;
+}
+
+.subtopic{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.chk{
+    display: none;
+}
+
+.letraInv{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* input[type="checkbox"]:disabled{
+    background: #ccc;
+}  */
+
+ /* #names{
+    /* border: 1px solid #FAF1E4;
+    border-bottom:none;
+    /* padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    height: 30vh; */
+    /* background-color: #9EB384;
+    position: absolute;
+    top: 250px;
+    left: 35px;} */
+
+    .countdown{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: 50vh;
+        margin-bottom: 0;
+    }
+
+    .countdown .days,
+    .countdown .hours,
+    .countdown .minutes,
+    .countdown .seconds {
+        width: 30%;
+        height: 140px;
+        display: block;
+        font-size: 48px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: #FAF1E4;
+        background-color: rgba(250,250,250,0.1);
+        margin: 5px;
+        padding-top: 10px;
+    }
+
+    
+
+/* .countdown-container{
+    background-size: cover;
+    background-position:center center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;    
+    justify-content: center;
+    flex-wrap: nowrap;
+} */
+
+.big-text {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+/* .countdown-el {
+    text-align: center;
+}*/
+
+.letra-cd {
+    font-size: 1.3rem;
+    font-family: 'IBM Plex Serif', serif;
+    color: #CEDEBD;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.value{
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+.invitacion{
+    background-color: #FAF1E4;
+    display: none;
+
+}
+
+.button{
+    background-color: #9EB384;    
+    color: #FAF1E4;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button:hover{
+    background-color: #435334;
+    color: #FAF1E4;
+}
+/* .counter div{
+    display: inline-block;
+}
+
+
+.countdown{
+    margin-top: 0;
+    margin-bottom: 14rem;
+}
+
+
+.counter .days,
+.counter .hours,
+.counter .minutes,
+.counter .seconds {
+    width: 22%;
+    height: 140px;
+    text-align: center;
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #FAF1E4;
+    background-color: rgba(250,250,250,0.1);
+}*/
+
+
+@media screen and (max-width: 992px) {
+    
+    .countdown{
+        margin-top: 55vh;
+    }
+
+    .countdown .days,
+    .countdown .hours,
+    .countdown .minutes,
+    .countdown .seconds {
+        font-size: 26px;
+    }
+
+    .countdown .days .value,
+    .countdown .hours .value,
+    .countdown .minutes .value,
+    .countdown .seconds .value {
+        margin-top: 30px!important;
+    }
+
+    .letra-cd {
+        font-size: 18px!important;
+        font-weight: 900 !important;
+        color: #435334 !important;
+    } 
+
+}
+
+/* .countdown .days,
+.countdown .hours,
+.countdown .minutes {
+    margin-right: 4%;
+} */
+
+/*
+.counter .days .value,
+.counter .hours .value,
+.counter .minutes .value,
+.counter .seconds .value {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+.counter span {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #CEDEBD;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    display: block;
+} */
+
+
+
+@media (min-width:600px){
+    
+    header.masthead{
+        /* background-position: center -10cm; */
+        background-size: contain;
+        background-color: #435334;        
+    }
+
+    /* #names{
+        position: absolute;
+        top: 20rem;
+        left: 43rem;
+    } */
+
+    .greeting{
+        font-size: 25px;
+    }
+
+    .subject{
+        font-size: 35px;
+    }
+
+    .subtopic{
+        font-size: 25px;
+    }
+
+
+    .fiesta{
+        height: 100px;
+    }
+
+    .scheduler{
+        height: 600px;
+        margin: 3rem;
+    }
+
+    .foot{
+        height: 200px;
+    }
+
+    .logo{
+        height:300px;
+    }
+
+
+    .foto{
+        max-height:400px;
+    }
+
+    .album{
+        max-height: 600px;
+    }
+
+
+    .countdown{
+        margin-top: 33vh;
+    }
+
+    .countdown .days,
+    .countdown .hours,
+    .countdown .minutes,
+    .countdown .seconds {
+        width: 22vh;
+        height: 160px;
+    }
+
+    .countdown .days .value,
+    .countdown .hours .value,
+    .countdown .minutes .value,
+    .countdown .seconds .value {
+        margin-top: 30px!important;
+    }
+
+
+}
+
+
+
+

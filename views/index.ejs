@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/spage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=IBM+Plex+Serif&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section id="signIn" class="id_checker">
+    <div class="container">
+      <div class="login-container">
+              <div id="output"></div>
+              <div class="avatar"></div>
+              <div class="form-box">
+                  <form action="/check" method="POST">
+                      <div class="col-12 text-center">
+                          <label for="number" class="form-label letrachica labelID">ID:</label>
+                          <input type="text" id="number" name="number" required autofocus placeholder="<%= locals.error ? error :''%>">
+                      </div>
+                      <div class="col-12 text-center id_checker">
+                          <button class="btn_sign btn btn-block login letrachica" type="submit" value="Submit">¡OK!</button>
+                      </div>                
+                  </form>
+              </div>
+          </div>          
+    </div>
+  </section>
+
+
+    <section id="header" class="invitacion">
+      <header class="masthead" style="padding-bottom: 20px ;">
+        <div class="container countdown">
+          <div class="days">
+            <div>
+              <p class="value">00</p>
+              <p class="letra-cd">Días</p>
+            </div>
+            
+          </div>
+  
+          <div class="hours">
+            <div>
+              <p class="value">00</p>
+              <p class="letra-cd">Horas</p>
+            </div>
+          </div>
+  
+          <div class="minutes">
+            <div>
+              <p class="value">00</p>
+              <p class="letra-cd">Minutos</p>
+            </div>
+            
+          </div>
+  
+          <div class="seconds">
+            <div>
+              <p class="value">00</p>
+              <p class="letra-cd">Segundos</p>
+            </div>
+          </div>
+        </div>
+         
+      </header>
+    </section>
+  
+      <section class="invitacion">
+        <div class="px-4 py-5 text-center">
+          <img class="d-block mx-auto mb-4 img-fluid logo" src="/images/J &P (2).png" alt="jyp">
+          <h2 class="display-5 fw-bold text-body-emphasis subject">¡Nos Casamos!</h2>
+          <div class="col-lg-6 mx-auto">
+            <p class="greeting mb-4">Tenemos el gozo de invitarte a nuestra boda.<br>¡Queremos compartir este momento tan especial con ustedes!</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    
+      <section id=lugar class="invitacion">
+        <div class="container px-4 pb-5 text-center" id="featured-3">
+          <h2 class="py-4 border-bottom border-top text-body-emphasis subject">¿Dónde & Cuándo?</h2>
+          <h2 class="fs-4 fecha fw-bold py-3 my-5">12 | OCTUBRE | 2024</h2>
+          <div class="iglesiaC">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+              <img class="fiesta" src="/images/iglesia.png" alt="iglesia" height="50"/>
+            </div>
+            <h3 class="mt-3 subtopic">Iglesia</h3>
+            <p class="letrachica py-2">2:00 p.m. - 3:00 p.m.</p>
+            <p class="letrachica pb-4">C. Lirios 306, Jurica, 76100 Santiago de Querétaro, Qro.</p>
+            <a href="https://urldefense.com/v3/__https://www.google.com/maps/dir/*C.*Lirios*306,*Jurica,*76100*Santiago*de*Quer**Ataro,*Qro./@20.6736837,-100.5351392,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x85d350b2275fd043:0xf4d588b19b7ab3f6!2m2!1d-100.4527442!2d20.673785?hl=es-419&amp;entry=ttu__;LysrKysrKyvDqSs!!J-PWDud9Isc!ndkim2pNsgxqqFmqEfhWOkn5kOJIyRXGXaN2eACdpSwyT98j0_ZeZT3jK0tz18j89Ev1CGaYfsFJRtU3-Eb4j3pNJ9RurlTh2AQ$">
+            <button class="button" type="button">Ver mapa</button></a>
+            <hr class="mt-5">
+          </div>
+          
+          
+          <p class="letrachica my-5 pIglesia">Los esperamos en <strong>"Terraza Valles"</strong> para empezar con nuestro itinerario:</p>
+          <img class="img-fluid scheduler" src="./images/scheduler.gif" alt="scheduler"/>
+  
+          <h2 class="text-body-emphasis mt-5 subtopic">Terraza Valles</h2>
+          <p class="letrachica py-4">Carr. Querétaro-Chichimequillas km 13, 76232 Santiago de Querétaro, Qro.</p>
+          <a href="https://urldefense.com/v3/__https://www.google.com/maps?bih=559&amp;biw=1280&amp;rlz=1C1GCEA_enMX989MX989&amp;hl=es-419&amp;um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=mx&amp;sa=X&amp;geocode=KQ8uk1aNW9OFMedbSLMpn4Xy&amp;daddr=Carr*Quer**Ataro-Chichimequillas*km*13,*76232*Santiago*de*Quer**Ataro,*Qro.__;K8OpKysrKysrw6kr!!J-PWDud9Isc!ndkim2pNsgxqqFmqEfhWOkn5kOJIyRXGXaN2eACdpSwyT98j0_ZeZT3jK0tz18j89Ev1CGaYfsFJRtU3-Eb4j3pNJ9RuPQuSMdA$">
+          <button class="button" type="button">Ver mapa</button></a>
+        </div>
+      </section>
+
+      <section id="regalos" class="invitacion">
+        <div class="container px-2 pt-5 text-center" id="featured-3">          
+          <img class="foto d-block mx-auto mb-5 img-fluid" src="./images/espalda.jpg" alt="cielo">
+          <h2 class="py-4 border-top border-bottom subject text-body-emphasis">Mesa de Regalos</h2>
+          <p class="pt-3 letrachica">Tu presencia es nuestro mejor regalo pero si deseas aportar a nuestro proyecto de vida,<br>¡Aquí están las siguientes opciones!</p>
+          <div class="row g-4 py-5 row-cols-2 row-cols-lg-2">
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                <a href="https://urldefense.com/v3/__https://mesaderegalos.liverpool.com.mx/milistaderegalos/51396602__;!!J-PWDud9Isc!ndkim2pNsgxqqFmqEfhWOkn5kOJIyRXGXaN2eACdpSwyT98j0_ZeZT3jK0tz18j89Ev1CGaYfsFJRtU3-Eb4j3pNJ9Ruu2-E5w4$">
+                  <img src="./images/Liverpool.png" alt="Liverpool" height="90"/>
+                </a>
+              </div>
+              <h3 class="letrachica fs-4 pt-2">51396602</h3>
+              <p class="letrachica">Da click en el logo para ser redirigido</p>
+              
+            </div>
+            
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                <img src="./images/luna-de-miel.png" alt="sobre" height="90"/>
+              </div>
+              <p class="letrachica"><b>Banco:</b> NU<br><b>Concepto:</b> Boda<br><b>No. Cuenta:</b> 01012872377<br><b>Nombre:</b> Pamela Rodriguez</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vestimenta" class="invitacion">
+        <div class="container px-4 pb-4 text-center" id="featured-3">
+          <h2 class="py-4 border-bottom border-top text-body-emphasis subject">Código de Vestimenta</h2>
+          <div class="row g-4 py-5 row-cols-2 row-cols-lg-2">
+            <div class="feature col mt-5">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3 img-fluid">
+                <img src="./images/traje.png" alt="iglesia" height="180"/>
+              </div>
+              <h3 class="fs-6 subtopic my-3">Traje</h3>
+            </div>
+            <div class="feature col mt-5">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3 img-fluid">
+                <img src="./images/vestido-largo-negro.png" alt="jardin" height="180"/>
+              </div>
+              <h3 class="fs-6 subtopic my-3">Vestido</h3>
+            </div>
+          </div>
+              <p class="letrachica py-3">En este día la formalidad es la regla: trajes, vestidos largos y sonrisas radiantes. <br>Chicas, favor de evitar colores claros.</p>
+        </div>    
+      </section>
+
+      <section id="album"class="invitacion">
+        <div class="container text-center px-4 py-5">
+          <h2 class="py-4 border-bottom border-top text-body-emphasis subject">Nuestro Amor</h2>
+          <div id="myCarousel" class="carousel slide mb-6 pointer-event my-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6" class=""></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/cielo.jpg" alt="cielo" class="img-fluid album"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/foto1.jpg" alt="foto1" class="img-fluid album"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/foto3.jpg" alt="foto2" class="img-fluid album"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/foto4.jpg" alt="foto4" class="img-fluid album"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/foto5.jpg" alt="foto5" class="img-fluid album"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/foto6.jpg" alt="foto6" class="img-fluid album"/>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  
+        </div>  
+      </section>
+
+  
+      
+      <section id="asistencia" class="invitacion">
+        <div class="container pb-5 px-4">        
+          <h1 class="display-5 fw-bold text-body-emphasis text-center subject border-bottom border-top py-4">Confirma tu Asistencia</h1>
+          <div class="col-lg-6 mx-auto my-5"> 
+           
+
+            <form action="/send" method="POST">
+              <div class="container">
+                <div class="row checkbox-row align-items-center">
+                <div class="form-check my-2 col-6">                
+                  <input type="checkbox" name="inv1" class="form-check-input chk" id="invite1">
+                  <label class="form-check-label letraInv" for="invite1"><%= invite1 %>
+                  </label>
+                </div>
+                <div class="form-check my-2 col-6">                 
+                  <input type="checkbox" name="inv2" class="form-check-input chk" id="invite2">
+                  <label class="form-check-label letraInv" for="invite2"><%= invite2 %>
+                  </label>
+                </div>
+                <div class="form-check my-2 col-6">                 
+                  <input type="checkbox" name="inv3" class="form-check-input chk" id="invite3">
+                  <label class="form-check-label letraInv" for="invite3"><%= invite3 %>
+                  </label>
+                </div>
+                <div class="form-check my-2 col-6">                 
+                  <input type="checkbox" name="inv4" class="form-check-input chk" id="invite4">
+                  <label class="form-check-label letraInv" for="invite4"><%= invite4 %>
+                  </label>
+                </div>
+                <div class="form-check my-2 col-6">                 
+                  <input type="checkbox" name="inv5" class="form-check-input chk" id="invite5">
+                  <label class="form-check-label letraInv" for="invite5"><%= invite5 %>
+                  </label>
+                </div>
+                <div class="form-check my-2 col-6">                 
+                  <input type="checkbox" name="inv6" class="form-check-input chk" id="invite6">
+                  <label class="form-check-label letraInv" for="invite6"><%= invite6 %>
+                  </label>
+                </div>
+              </div>
+
+            
+              <div class="col-12 text-center chk msg_visible mt-5">
+                <label for="message" class="form-label letrachica">Si gustas, escríbenos un bonito mensaje o dedicanos una canción <span class="text-body-secondary">(Opcional)</span></label>
+                  <textarea class="form-control" id="msg" name="msg" aria-label="With textarea"></textarea>
+                  <div class="invalid-feedback">
+                    Favor de escribir un mensaje.
+                  </div>
+              </div>
+              <button class="w-100 button btn btn-lg mt-3 chk msg_visible" type="submit">Envíar</button>  
+            </form>             
+          </div>
+        </div>
+        </div>
+      </section>
+  
+  
+      <section id="despedida" class="invitacion">
+        <footer class="footer py-1">
+          <div class="container">
+            <div class="px-4 text-center">
+              <h1 class="border-top py-4 subject text-body-emphasis">¡Te esperamos!</h1>
+              <img class="d-block mx-auto mb-4 img-fluid foot" src="./images/J &P (2).png" alt="jyp">
+          </div>
+      </footer>      
+      </section>  
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="./index.js" charset="utf-8"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
+      <script>
+
+        var today = new Date();
+        var limitDay = new Date("July 31, 2024");
+        
+
+        var weddingDate = new Date("Oct 12, 2024 14:00:00").getTime();
+
+        var x =setInterval(function(){
+            var now = new Date().getTime();
+            var difference = weddingDate - now;
+
+            console.log(now);
+
+            var days = Math.floor(difference / (1000 *60 * 60 * 24));
+            var hours = Math.floor(difference % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            var minutes = Math.floor(difference % (1000 * 60 * 60) / (1000 * 60));
+            var seconds = Math.floor(difference % (1000 * 60) / 1000);
+
+            document.getElementsByClassName("value")[0].innerHTML=days;    
+            document.getElementsByClassName("value")[1].innerHTML=hours;       
+            document.getElementsByClassName("value")[2].innerHTML=minutes;         
+            document.getElementsByClassName("value")[3].innerHTML=seconds;
+        });
+
+        function chkVisible(num){   
+          const labelLen=0;
+          const inv=document.getElementById("invite"+num);
+          for ( const label of inv.labels ){
+            const aux=label.textContent.trim();                          
+
+            if(aux.length !== 0){       
+              $("#invite"+num).css('display','block');
+            }
+          }                          
+          
+        }
+
+        const idCat=[1232, 1235, 1236, 1237, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1245, 
+        1246, 1250, 1253, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1251, 1252, 1285]
+
+        if (idCat.includes(<%= numId %>) ){
+          $(".iglesiaC").css('display','block');
+          $(".pIglesia").html("Despues de la ceremonoia religiosa, Los esperamos en <strong>Terraza Valles</strong> para continuar con nuestro itinerario:")
+        }
+        else {
+          $(".iglesiaC").css('display','none');
+        }
+
+        
+        if(<%= idExist %> === 1){ 
+
+          if (Date.parse(today) > Date.parse(limitDay)){
+          Swal.fire({
+            title: "¡Bienvenido!",
+            text: "Le recordamos que la fecha límite para confirmar su asistencia ha caducado.",
+            icon: 'success',
+            toast:true,
+            confirmButtonColor: '#9EB384'
+          
+          });
+
+          document.getElementById("invite1").disabled = true;          
+          document.getElementById("invite2").disabled = true;
+          document.getElementById("invite3").disabled = true;
+          document.getElementById("invite4").disabled = true;
+          document.getElementById("invite5").disabled = true;
+          document.getElementById("invite6").disabled = true;
+        }
+
+        else{
+          Swal.fire({
+            title: "¡Bienvenido!",
+            text: "Favor de confirmar su asistencia antes del 31 de Julio de 2024.",
+            icon: 'success',
+            toast:true,
+            confirmButtonColor: '#9EB384'
+          });
+        }
+
+          $(".invitacion").css('display','block');          
+          $(".id_checker").css('display','none');      
+
+          chkVisible(1);
+          chkVisible(2);
+          chkVisible(3);
+          chkVisible(4);
+          chkVisible(5);
+          chkVisible(6);
+          
+          $(".msg_visible ").css('display','block');
+          
+        }
+
+
+        if(<%= ass1 %>  === 1){
+          $("#invite1").prop('checked',true);          
+        }
+
+        if(<%= ass2 %>  === 1){
+          $("#invite2").prop('checked',true);
+          
+        }
+        if(<%= ass3 %>  === 1){
+          $("#invite3").prop('checked',true);
+          
+        }
+
+        if(<%= ass4 %>  === 1){
+          $("#invite4").prop('checked',true);
+          
+        }
+        if(<%= ass5 %>  === 1){
+          $("#invite5").prop('checked',true);
+          
+        }
+
+        if(<%= ass6 %>  === 1){
+          $("#invite6").prop('checked',true);
+          
+        }  
+
+    </script>
+      
+      
+    
+</body>
+</html>
